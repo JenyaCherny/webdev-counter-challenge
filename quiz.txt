@@ -1,5 +1,5 @@
-1. Why do you use "using strict" at the top of your JS files?
-2. What does line 3 mean?
-3. What is happening on lines 5-8 and why?
+1. Why do you use "using strict" at the top of your JS files? - this mode allows to catch common mistakes and throw errors for potentially unsafe actions.
+2. What does line 3 mean? - Declaration of variable with value of 3
+3. What is happening on lines 5-8 and why? - There were 4 constant variables declared that is used for counting, increase count, decrease count, reset count. The use of const with querySelector to select an element from the DOM ensures that the variable's reference to the DOM element will not change. However, the properties of the DOM element itself can still be modified.
 4. If you implemented the functionality of the buttons,
-   why do you think I wrote the JS code the way I did?
+   why do you think I wrote the JS code the way I did? - Good question that I'd like to know an answer too. I really don't know.
