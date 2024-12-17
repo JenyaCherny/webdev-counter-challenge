@@ -66,4 +66,9 @@ body {
 }
 
 @media (width >= 500px) {
+    .btn-container {
+        flex-direction: row;
+        /*background-color:  red;*/
+        gap: 5px;
+    }
 }

@@ -10,35 +10,40 @@ const decrementBtn = document.querySelector(".decrement-btn");
 
 function incrementCount() {
     // Write the relevant code in this block
-
+    count++;
+    countElement.textContent = count;
+    //console.log(count);
 }
 
 
 function decrementCount() {
     // Write the relevant code in this block
-
+    count--;
+    countElement.textContent = count;
 }
 
 
 function resetCount() {
     // Write the relevant code in this block
-    
+    count = 0;
+    countElement.textContent = count;
 }
 
 function renderUpdatedCount() {
     countElement.innerText = count;
 }
 
-incrementBtn.addEventListener("click", function () {
+incrementBtn.addEventListener("click", incrementCount);
     // Write code below this line
-
+    resetBtn.addEventListener("click", resetCount); 
+    decrementBtn.addEventListener("click", decrementCount);
 
 
     // STOP HERE
 
 
     renderUpdatedCount();
-});
+
 
 resetBtn.addEventListener("click", function () {
     // Write code below this line
